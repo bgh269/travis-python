@@ -1,3 +1,8 @@
 language: python
+install: 
+-pip install coverage
 sript:
   - pytest
+  - coverage run -m pytest
+after_success:
+  - coverage report
