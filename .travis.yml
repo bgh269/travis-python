@@ -1,7 +1,7 @@
 language: python
 install: 
--pip install coverage
-sript:
+  - pip install coverage
+script:
   - pytest
   - coverage run -m pytest
 after_success:
